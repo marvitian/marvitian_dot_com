@@ -1,0 +1,10 @@
+:root{
+    --color-primary: #2f2d32;
+    --color-secondary: #484050;
+    --color-shadow: hwb(0 12% 86%);
+    --color-glow: #f0ae8d;
+    /* --color-glow: radial-gradient(circle, #f0ae8d , rgb(233, 167, 131)); */
+    --color-text: #d3873b;
+    --color-text-dull: #c07e3c;
+
+}

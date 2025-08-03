@@ -1,0 +1,119 @@
+.displayContentContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;  
+  }
+  
+  
+  .contentBox {
+    background-color: var(--color-secondary);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 20px;
+    width: 8em;
+    height: 8em;
+    
+    
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 25px;
+    
+    box-shadow: #00000040 0px 14px 28px, #00000038 0px 10px 10px;
+
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: monospace;
+  
+  }
+  
+  .contentBox:hover {
+    background-color: var(--color-glow);
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 25px;
+    /* box-shadow: 7px 4px 6px 1px var(--color-shadow); */
+    box-shadow: #00000040 0px 24px 28px, #00000038 0px 10px 20px;
+  }
+  
+  .contentBox{
+    font-size: 1em;
+    font-weight: bold;
+    font-family: monospace;
+    color: black;
+  }
+
+
+
+
+/* button box */
+.buttonBox {
+    background-color: var(--color-secondary);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding: 20px;
+    width: 8em;
+    height: 1em;
+    
+    
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100px;
+    
+    box-shadow: #00000040 0px 14px 28px, #00000038 0px 10px 10px;
+
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: monospace;
+  
+  }
+
+  .buttonBox:hover {
+    background-color: var(--color-glow);
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100px;
+    /* box-shadow: 7px 4px 6px 1px var(--color-shadow); */
+    box-shadow: #00000040 0px 24px 28px, #00000038 0px 10px 20px;
+  }
+
+
+
+
+  /* TYPE WRITER */
+/* 
+  .typewriter {
+    font-family: monospace;
+    color:#0000;
+    background:
+      linear-gradient(-90deg,#00DFFC 5px,#0000 0) 10px 0,
+      linear-gradient(#00DFFC 0 0) 0 0;
+    background-size:calc(var(--n)*1ch) 200%;
+    -webkit-background-clip:padding-box,text;
+    background-clip:padding-box,text;
+    background-repeat:no-repeat;
+    animation: 
+      b .7s infinite steps(1),   
+      t calc(var(--n)*.3s) steps(var(--n)) forwards;
+  }
+
+  @keyframes t{
+    from {background-size:0 200%}
+  }
+  @keyframes b{
+    50% {background-position:0 -100%,0 0}
+  } */

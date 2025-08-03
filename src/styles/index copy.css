@@ -1,0 +1,16 @@
+body {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  margin: 0;
+  font-family: monospace;
+  /* font-weight: bold; */
+  -webkit-font-smoothing: subpixel-antialiased;
+  /* cursor: progress; */
+}
+
+
+p {
+  color: var(--color-text-dull);
+  /* font-size: 1.5rem; */
+  /* font-weight: normal; */
+}

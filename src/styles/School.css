@@ -1,0 +1,11 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+
+/* on hover change tr background color */
+tr:hover {
+    background-color: var(--color-secondary);
+}
