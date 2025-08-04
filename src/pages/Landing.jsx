@@ -22,11 +22,13 @@ function Landing(){
             <div>
                 <h3>Stuff I have going on:</h3>
                 <div className="displayContentContainer">
-                    <button className="contentBox" onClick={()=>window.location.href = ("./takenote")}>TakeNote</button>
+                    {/* <button className="contentBox" onClick={()=>window.location.href = ("./takenote")}>TakeNote</button> */}
                     <button className="contentBox" onClick={()=>window.location.href = ("./school")}>School</button>
                     <button className="contentBox" onClick={()=>window.location.href = ("./work")}>Work</button>
+                    <button className="contentBox" onClick={()=>window.location.href = ("./ASIC")}>ASIC</button>
                     {/* <button className="contentBox" onClick={()=>window.location.href = ("./projects")}>Projects</button> */}
-                    <button className="contentBox" onClick={()=>window.location.href = ("./leetcode")}>LeetCode</button>
+                    {/* <button className="contentBox" onClick={()=>window.location.href = ("./projects")}>Projects</button> */}
+                    {/* <button className="contentBox" onClick={()=>window.location.href = ("./leetcode")}>LeetCode</button> */}
                 </div>
             </div>
         </div>

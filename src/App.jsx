@@ -8,7 +8,8 @@ import Header from './components/Header';
 
 import Landing from './pages/Landing';
 import School from './pages/School';
-
+import ASIC from './pages/ASIC';
+import Work from './pages/Work';
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/school" element={<School />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/ASIC" element={<ASIC />} />
             {/* <Route path="/school" element={<Home />} /> */}
           </Routes>
         </Router>
