@@ -10,6 +10,7 @@ import Landing from './pages/Landing';
 import School from './pages/School';
 import ASIC from './pages/ASIC';
 import Work from './pages/Work';
+import Budgeting from './pages/Budgeting';
 
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/school" element={<School />} />
             <Route path="/work" element={<Work />} />
-            <Route path="/ASIC" element={<ASIC />} />
+            <Route path="/Budgeting" element={<Budgeting />}></Route>
+            {/* <Route path="/ASIC" element={<ASIC />} /> */}
             {/* <Route path="/school" element={<Home />} /> */}
           </Routes>
         </Router>

@@ -1,0 +1,11 @@
+Calendar {
+    background-color: grey;
+}
+.payday-highlight {
+    background: #aaffaa !important;
+    border-radius: 50%;
+}
+.expense-highlight {
+    background: #ffcccc !important;
+    border-radius: 50%;
+}
