@@ -3,4 +3,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    /* make it the width of the window */
+    width: 90vw;
+    
 }
