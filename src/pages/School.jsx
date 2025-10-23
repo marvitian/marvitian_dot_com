@@ -7,6 +7,23 @@ function Masters(){
             <h1>M.Eng Candidate in Computer Networks</h1>
             <p>Here is where I will document my journey through my graduate studies</p>
             <hr/>
+            <h3>Courses Completed:</h3>
+                <table>
+                    <th style={{width:"10%"}}>Course code</th>
+                    <th style={{width:"40%"}}>Course Name</th>
+                    <th style={{width:"10%"}}>Grade</th>
+                    <tr>
+                        <td>CN8810</td>
+                        <td>Intro to Computer Networks</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>CN8813</td>
+                        <td>IP Protocols</td>
+                        <td>A+</td>
+                    </tr>
+
+                </table>
         </div>
     );
 }
@@ -58,6 +75,12 @@ function Undergrad(){
                         <td><a href="https://www.ee.torontomu.ca/undergraduate/outlines/COE608_course_outline.pdf" target="_blank">COE 608</a></td>
                         <td>Computer Organization and Architecture</td>
                         <td>B</td>
+                    </tr>
+                    <tr>
+                        {/* operating systems */}
+                        <td><a href="https://www.ee.torontomu.ca/undergraduate/outlines/COE628_course_outline.pdf" target="_blank">COE 628</a></td>
+                        <td>Operating Systems</td>
+                        <td>B+</td>
                     </tr>
                     <tr>
                         <td><a href="https://www.ee.torontomu.ca/undergraduate/outlines/COE718_course_outline.pdf" target="_blank">COE 718</a></td>
