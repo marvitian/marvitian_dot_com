@@ -34,20 +34,31 @@ function Drone_page()
 
                 <div style={{ width: '40vw'}}> 
                     <h2> UPDATES </h2>
-                    <div className="blog_entry">
-                        <h2> OCT 20 </h2> 
-                        <p> Starting this off I need to break this project up into digestable bites </p> 
-                        <p> the initial list is as follows: </p>
-                        <ol>
-                            <li> Requirements Spec and Analysis</li>
-                            <li> Hardware design and selection </li>
-                            <li> Flight controller programming </li>
-                            <li> Radio communication setup </li>
-                            <li> POV camera integration </li> 
-                        </ol>
+                    <div className='blog_entry'>
+                        <h2> Oct 22 </h2>
+                        <p> 
+                            The motors are on the way! 4 dc motors with propellers should be here in a week or so.
+                            <br/>
+                            <br/>
+                            In the meantime I've spent a lot of time playing with the ESP32 and FreeRTOS. I have extensive developing firmware at work for the memory controller PHY
+                            but none of the features of that controller are near as exciting as half the features I've discovered on the ESP32.
+                            <br/>
+                            <br/>
+                            I think an interesting challenge will be to go through the esp-idf examples one by one and documenting the process. I'm going to spend some time tomorrow creating 
+                            separate page for that, as well as maybe a github repo to go along with it.
+                            <br/>
+                            <br/>
+                            I've been digging into the data sheet for the camera module built into this board, when we used it for the capstone, 
+                            the video was very low quality and laggy, but I think I see some ways I can improve that if I'm clever enough.
+                            <br/>
+                            <br/>
+                            More updates to come.
+                        </p>
                     </div>
 
+
                     <div className='blog_entry'>
+                        
                         <h2> Oct 21 </h2>
                         <p> 
                             So there were alot of updates today... 
@@ -87,6 +98,22 @@ function Drone_page()
                             
                         </p>
                     </div>
+                    <div className="blog_entry">
+                        <h2> OCT 20 </h2> 
+                        <p> Starting this off I need to break this project up into digestable bites </p> 
+                        <p> the initial list is as follows: </p>
+                        <ol>
+                            <li> Requirements Spec and Analysis</li>
+                            <li> Hardware design and selection </li>
+                            <li> Flight controller programming </li>
+                            <li> Radio communication setup </li>
+                            <li> POV camera integration </li> 
+                        </ol>
+                    </div>
+
+                    
+
+                    
                 </div>
                 <div>
                     <h2> Design Overview</h2>
