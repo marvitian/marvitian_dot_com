@@ -18,21 +18,9 @@ function Intro()
     )
 }
 
-
-
-
-
-
-function Drone_page()
+function Updates()
 {
-    
-    
-    return (
-        <div>
-            <Intro />
-            <div style={{ display: 'flex', flexDirection: 'row' , justifyContent: 'space-evenly' }}>
-
-                <div style={{ width: '40vw'}}> 
+    return(<div> 
                     <h2> UPDATES </h2>
                     <div className='blog_entry'>
                         <h2> Oct 22 </h2>
@@ -63,14 +51,19 @@ function Drone_page()
                         <p> 
                             So there were alot of updates today... 
                             <br/>
-                            <h3> Requirements Spec and Analysis </h3>
-                            <h4> Brain MCU Selection </h4>
+                        </p>
+                        <h3> Requirements Spec and Analysis </h3>
+                        <h4> Brain MCU Selection </h4>
+                        <p>
                             My goal going into this project was to reuse as much hardware as i could from my capstone project. The
                             MCU used in that project was the Freenove ESP32 wrover e camera board. To my knowledge this as good as any to begin development, and 
                             for the cost of $0.00, i have no issues seeing how far it will take me.
                             <br/>
                             <br/>
-                            <h4> Motor </h4>
+                        </p>
+
+                        <h4> Motor </h4>
+                        <p>
                             after seeing that that ESP32 has built in mcPWM I realized that I could use it to drive the motors directly if I decide to use brushed DC motors. 
                             This would simplify the hardware design and reduce cost significantly, though I would be sacrificing some efficiency and performance.                
                             Since the main goal of this project is to create a portfolio of embedded systems design, I think this is a reasonable trade-off. 
@@ -83,7 +76,9 @@ function Drone_page()
                             however the metrics provided are not targeted towards drone applications, so this will likely require more 
                             experimental tuning rather than calculation based design.
                             <br/>
+                        </p> 
                             <h4> Firmware </h4>
+                        <p>
                             For the firmware I will use freeRTOS as the framework to build upon. I want as much of this project to be made from scratch 
                             as possible, so the RTOS will help me manage the complexity of the system while still allowing me to write my own code for the specific functionality I need.
                             I have some research to do with respect to some of the more complex features such as radio communication control and camera integration, but I think I can handle the motor control 
@@ -115,9 +110,46 @@ function Drone_page()
 
                     
                 </div>
-                <div>
-                    <h2> Design Overview</h2>
-                </div>
+    );
+}
+
+function Design_Overview()
+{
+
+    return(
+        <div>
+            <h2> Design Overview</h2>
+        </div>
+    )
+}
+
+function Nav_bar()
+{
+    return(
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', marginBottom: '20px' }}>
+            {/* <a href="/drone"> Intro </a>
+            <a href="/drone/updates"> Updates </a>
+            <a href="/drone/design_overview"> Design Overview </a> */}
+            <button className="buttonBox" onClick={()=>window.location.href = ("/drone")}> Intro </button>
+            <button className="buttonBox" onClick={()=>window.location.href = ("/drone/updates")}> Updates </button>
+            <button className="buttonBox" onClick={()=>window.location.href = ("/drone/design_overview")}> Design Overview </button>
+        </div>
+    )
+}
+
+function Drone_page()
+{
+    
+    
+    return (
+        <div>
+            <div style={{ width: '80vw', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+            {/* <div style={{ display: 'flex', flexDirection: 'row' , justifyContent: 'space-evenly' }}> */}
+            <Nav_bar />
+            <Intro />
+            <Design_Overview /> 
+            <Updates />
+
             </div>  
         </div>
 

@@ -4,7 +4,7 @@ import '../styles/School.css';
 function Masters(){
     return(
         <div>
-            <h1>M.Eng Computer Networks</h1>
+            <h1>M.Eng Candidate in Computer Networks</h1>
             <p>Here is where I will document my journey through my graduate studies</p>
             <hr/>
         </div>

@@ -14,7 +14,7 @@ function Landing(){
             
             <p className='typewriter --n:148'>
                 This will serve as my portfolio for my experience gained through my career and education, 
-                as well as a way to docuement my journey of learning full stack web development.
+                as well as a way to document my journey of learning full stack web development.
                 <br/>
                 <br/>
             
