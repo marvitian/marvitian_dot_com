@@ -86,7 +86,7 @@ function TME(){
                     <ul>
                         <li>Electrical Eye Analysis</li>
                         <li>Obtain behaviour reports of customer implementations using lab equipment</li>
-                        <li>Electtrical characterization</li>
+                        <li>Electrical characterization</li>
                         <li>Timing Analysis of implementing subroutines on sillicon</li>
                         <li>Create software interface to provide control of physical components such as memory registers and command status registers</li>
                         <li>manual configuration of memory subsystems</li>
