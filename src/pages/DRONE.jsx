@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 
@@ -6,12 +6,32 @@ function Intro()
 {
     return(
         <div>
-            <h1>Embedded Drone Development</h1>
+            
+            <h2> What this page is </h2> 
             <p> 
-                Using my knowledge of embedded systems to
-                build a custom drone from scratch. This will involve designing the
-                hardware, selecting appropriate components, and programming the flight
-                controller to ensure stable flight and maneuverability.
+                I will hone my skills in embedded systems by designing and building a custom drone. The primary focus will be on 
+                designing custom firmware for the flight controller using FreeRTOS on an ESP32 microcontroller.
+            </p>
+            
+            <p>
+                Side goals include learning about control theory, radio communication protocols, and camera integration for FPV flying.
+            </p>
+
+            <h2> Why a drone? </h2>
+            <p>
+                Drones are complex embedded systems that require real-time control, sensor integration, and wireless communication. 
+                Building a drone from scratch will challenge me to apply my embedded systems knowledge in a practical way.
+            </p>
+
+            <h2> This page </h2>
+            <p>
+                I will post progress updates, learning topics, design decisions, and technical challenges I encounter along the way in the updates section. 
+                This section will be a very informal method of journaling my progress, allowing me to brainstorm on half-baked ideas and document the decision making process 
+                without overcrowding my formal documentation.
+            </p>
+
+            <p>
+                The design overview section will contain more formal documentation of the system architecture, hardware selection, and firmware design.
             </p>
             
         </div>
@@ -22,6 +42,12 @@ function Updates()
 {
     return(<div> 
                     <h2> UPDATES </h2>
+                    <div className='blog_entry'>
+                        <h2> Oct 25 2025</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
                     <div className='blog_entry'>
                         <h2> Oct 24 2025</h2>
                         <p>
@@ -161,32 +187,30 @@ function Design_Overview()
     )
 }
 
-function Nav_bar()
+function Nav_bar({ activeView, setActiveView })
 {
     return(
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', marginBottom: '20px' }}>
-            {/* <a href="/drone"> Intro </a>
-            <a href="/drone/updates"> Updates </a>
-            <a href="/drone/design_overview"> Design Overview </a> */}
-            <button className="buttonBox" onClick={()=>window.location.href = ("/drone")}> Intro </button>
-            <button className="buttonBox" onClick={()=>window.location.href = ("/drone/updates")}> Updates </button>
-            <button className="buttonBox" onClick={()=>window.location.href = ("/drone/design_overview")}> Design Overview </button>
+            <button className="buttonBox" onClick={() => setActiveView('intro')}> Intro </button>
+            <button className="buttonBox" onClick={() => setActiveView('updates')}> Updates </button>
+            <button className="buttonBox" onClick={() => setActiveView('design')}> Design Overview </button>
         </div>
     )
 }
 
 function Drone_page()
 {
-    
+    const [activeView, setActiveView] = useState('intro');
     
     return (
         <div>
             <div style={{ width: '80vw', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
-            {/* <div style={{ display: 'flex', flexDirection: 'row' , justifyContent: 'space-evenly' }}> */}
-            <Nav_bar />
-            <Intro />
-            <Design_Overview /> 
-            <Updates />
+            <h1>Embedded Drone Development</h1>
+            <Nav_bar activeView={activeView} setActiveView={setActiveView} />
+            
+            {activeView === 'intro' && <Intro />}
+            {activeView === 'design' && <Design_Overview />}
+            {activeView === 'updates' && <Updates />}
 
             </div>  
         </div>
