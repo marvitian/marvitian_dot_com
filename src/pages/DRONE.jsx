@@ -183,6 +183,69 @@ function Design_Overview()
     return(
         <div>
             <h2> Design Overview</h2>
+            <h3> Flight controller </h3>
+            <h4> FSM </h4>
+            <table>
+                <tr> 
+                    <th> State → Event </th>
+                    <th> Next State </th>
+                    <th> Action </th>
+                </tr>
+                <tr>
+                    <td>ST_BOOT + EV_BOOT_DONE </td>
+                    <td> ST_INIT </td>
+                    <td> Initialize peripherals, sensors, and communication interfaces </td>
+                </tr>
+                <tr>
+                    <td> ST_INIT + EV_INIT_FAIL </td>
+                    <td> ST_FAILSAFE </td>
+                </tr>
+                <tr>
+                    <td> ST_INIT + EV_INIT_DONE </td>
+                    <td> ST_DISARMED </td>
+                    <td> Wait for arming command </td>
+                </tr>
+                <tr>
+                    <td> ST_DISARMED + EV_ARM_CMD </td>
+                    <td> ST_PREPARE </td>
+                    <td> Begin calibration / Self checks</td>
+                </tr>
+                <tr>
+                    <td> ST_PREPARE + EV_PREPARE_FAIL </td>
+                    <td> ST_FAILSAFE</td>
+                </tr>
+                <tr> 
+                    <td> ST_PREPARE + EV_PREPARE_DONE </td>
+                    <td> ST_ARMED </td>
+                    <td> Allow takeoff </td>
+                </tr>
+                <tr>
+                    <td> ST_ARMED + EV_TAKEOFF_CMD </td>
+                    <td> ST_TAKEOFF </td>
+                    <td> Initiate takeoff sequence,  </td>
+                </tr>
+                <tr>
+                    <td> ST_TAKEOFF + EV_TAKEOFF_STABILIZED </td>
+                    <td> ST_FLYING </td>
+                    <td> Accept control </td>
+                </tr>
+                <tr>
+                    <td> ST_FLYING + EV_LAND_CMD </td>
+                    <td> ST_LANDING </td>
+                    <td> Initiate landing sequence </td>
+                </tr>
+                <tr>
+                    <td> ST_LANDING + EV_LANDED </td>
+                    <td> ST_ARMED </td>
+                    <td> Cut motors </td>
+                </tr>
+                <tr>
+                    <td> ST_ARMED + EV_DISARM_CMD </td>
+                    <td> ST_DISARMED </td>
+                    <td> Disarm motors </td>
+                </tr>
+                
+            </table>
         </div>
     )
 }
