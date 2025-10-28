@@ -43,9 +43,27 @@ function Updates()
     return(<div> 
                     <h2> UPDATES </h2>
                     <div className='blog_entry'>
-                        <h2> Oct 25 2025</h2>
+                        <h2> Oct 27 2025</h2>
                         <p>
-                            
+                            The motors showed up, but the package was empty... contacted the seller for a replacement.
+                            <br/>
+                            <br/>
+                            In the meantime I spent some time working on the flight controller FSM and organizing the RTOS tasks. The 
+                            FSM states and events have been defined in the Design Overview section.
+                            <br/>
+                            <br/>
+                            The implementation of the FSM will make use of FreeRTOS queues to have the states respond to events asynchronously. Each state will run as a separate task, waiting for events to be posted to its queue. 
+                            When an event is received, the state will process it and determine if a transition to another state is required. This way 
+                            it will be easy to manage the deadlines and timing requirements of each state without blocking the entire system.
+                            <br/>
+                            <br/>
+                            I've been thinking alot about the motor control. Pitch and roll seems straightforward, but yaw seems tricky.
+                            I have a IMU that I want to play with, hopefully it will be accurate enough for basic flight stabilization.
+                            <br/>
+                            <br/>
+                            I was hoping to start testing the motor control, but without the motors I will instead look into the frame. 
+                            My coworker said he wouldn't mind 3d printing some parts for me, so I will start digging into the details.
+                            <br/>
                         </p>
                     </div>
                     <div className='blog_entry'>
