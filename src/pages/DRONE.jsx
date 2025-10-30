@@ -43,6 +43,26 @@ function Updates()
     return(<div> 
                     <h2> UPDATES </h2>
                     <div className='blog_entry'>
+                        <h2> Oct 29 2025 </h2>
+                        <p>
+                            Found this absolute legend today: <a href="https://www.youtube.com/watch?v=jY6bBcMtseY&t=517s">by Carbon Aeronautics</a> who does a 
+                            really good job breaking down the control theory behind flight stabilization and the PID controller. I'm going to start 
+                            building this next.
+                            <br/>
+                            <br/>
+                            Someone talked me out of using brushed DC motors for this project, and I'm taking the shipping misshap as a sign. I'm going back to research to 
+                            select appropriate brushless motors and ESCs for this project. Glad I waited to by the battery. 
+                            <br/>
+                            <br/>
+                            I got my IMU and got the pins soldered on today. I'm getting readings on it but without anything to do with it, it's not very exciting. But i will get a running task that I 
+                            can plug into my FSM. 
+                            <br/>
+                            <br/>
+                            
+                        </p>
+                    </div>
+
+                    <div className='blog_entry'>
                         <h2> Oct 27 2025</h2>
                         <p>
                             The motors showed up, but the package was empty... contacted the seller for a replacement.
