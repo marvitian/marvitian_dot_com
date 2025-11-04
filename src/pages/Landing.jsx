@@ -25,6 +25,7 @@ function Landing(){
                     {/* <button className="contentBox" onClick={()=>window.location.href = ("./takenote")}>TakeNote</button> */}
                     <button className="contentBox" onClick={()=>window.location.href = ("./school")}>School</button>
                     <button className="contentBox" onClick={()=>window.location.href = ("./work")}>Work</button>
+                    <button className="contentBox" onClick={()=>window.location.href = ("./Leetcode")}>LeetCode</button>
                     {/* <button className="contentBox" onClick={()=>window.location.href = ("./ASIC")}>ASIC</button> */}
                     <button className="contentBox" onClick={()=>window.location.href = ("./drone")}>DRONE</button>
                     {/* <button className="contentBox" onClick={()=>window.location.href = ("./projects")}>Projects</button> */}

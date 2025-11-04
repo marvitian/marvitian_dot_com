@@ -11,6 +11,7 @@ import School from './pages/School';
 import ASIC from './pages/ASIC';
 import Work from './pages/Work';
 import Drone_page from './pages/DRONE';
+import Leetcode from './pages/Leetcode';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -26,6 +27,7 @@ function App() {
             <Route path="/work" element={<Work />} />
             <Route path="/ASIC" element={<ASIC />} />
             <Route path="/drone" element={<Drone_page />} />
+            <Route path="/Leetcode" element={<Leetcode />} />
             {/* <Route path="/school" element={<Home />} /> */}
           </Routes>
         </Router>
