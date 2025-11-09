@@ -43,6 +43,20 @@ function Updates()
     return(<div> 
                     <h2> UPDATES </h2>
                     <div className='blog_entry'>
+                        <h2> Nov 3 2025 </h2>
+                        <p> 
+                            Took a few days off for halloweekend and the Hot Mulligan concert, but we're back at it. 
+                            <br/>
+                            <br/>
+                            I've decided the best way to go about this project is build / test every component individually to determine reasonable
+                            deadline periods for each RTOS task, and once I have all the prototypes working individually, I will print a custom PCB to integrate everything together.
+                            This will make both the RTOS development and hardware debugging much easier.
+                            <br/>
+                            <br/>
+
+                        </p>
+                    </div>
+                    <div className='blog_entry'>
                         <h2> Oct 29 2025 </h2>
                         <p>
                             Found this absolute legend today: <a href="https://www.youtube.com/watch?v=jY6bBcMtseY&t=517s">by Carbon Aeronautics</a> who does a 
@@ -288,6 +302,41 @@ function Design_Overview()
     )
 }
 
+function Brainstorming()
+{
+    return(
+        <div>
+            <div className='blog_entry'>
+            <h2> Brainstorming Ideas </h2>
+            <h3> Step one.</h3>
+            <h4> Start with the mission & constraints.</h4>
+            <table className ="brainstorm_table">
+                <tr>
+                    <th> Topic </th> <th> Notes </th> 
+                    </tr>
+                <tr>
+                    <td> Target Weight capacity </td> <td> 5 kg </td>
+
+                </tr>
+                <tr>
+                    <td> Flight Time </td> <td> 20 minutes </td>
+                </tr>
+                <tr>
+                    <td> FPV </td> <td> </td>
+                </tr>
+                <tr>
+                    <td> Communications </td> 
+                    <td>`</td>
+                </tr>
+            </table>
+            <h3> Step two. </h3>
+            <h3> Battery Fundamentals </h3>
+            
+            </div>
+        </div>
+    )
+}
+
 function Nav_bar({ activeView, setActiveView })
 {
     return(
@@ -295,6 +344,8 @@ function Nav_bar({ activeView, setActiveView })
             <button className="buttonBox" onClick={() => setActiveView('intro')}> Intro </button>
             <button className="buttonBox" onClick={() => setActiveView('updates')}> Updates </button>
             <button className="buttonBox" onClick={() => setActiveView('design')}> Design Overview </button>
+            <button className="buttonBox" onClick={() => setActiveView('brainstorming')}> Brainstorming </button>
+        
         </div>
     )
 }
@@ -312,6 +363,7 @@ function Drone_page()
             {activeView === 'intro' && <Intro />}
             {activeView === 'design' && <Design_Overview />}
             {activeView === 'updates' && <Updates />}
+            {activeView === 'brainstorming' && <Brainstorming />}
 
             </div>  
         </div>
