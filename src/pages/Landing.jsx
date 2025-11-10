@@ -3,6 +3,8 @@ import '../styles/App.css';
 import '../styles/ContentBox.css';
 
 
+import { Button } from '../components/ui/button';
+
 
 
 function Landing(){
@@ -19,6 +21,9 @@ function Landing(){
                 <br/>
             
             </p>
+            
+            <Button> Click Me</Button>
+            
             <div>
                 <h3>Stuff I have going on:</h3>
                 <div className="displayContentContainer">
