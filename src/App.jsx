@@ -11,6 +11,7 @@ import School from './pages/School';
 import ASIC from './pages/ASIC';
 import Work from './pages/Work';
 import Drone_page from './pages/DRONE';
+import AoC_page from './pages/AoC.jsx'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -26,6 +27,7 @@ function App() {
             <Route path="/work" element={<Work />} />
             <Route path="/ASIC" element={<ASIC />} />
             <Route path="/drone" element={<Drone_page />} />
+            <Route path="/AoC2025" element={<AoC_page />} />
             {/* <Route path="/school" element={<Home />} /> */}
           </Routes>
         </Router>

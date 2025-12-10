@@ -24,3 +24,16 @@
   transition: box-shadow 0.3s ease;
   
 }
+
+details {
+  background-color: var(--color-tertiary);
+  border-radius: 0.9em;
+  padding: 1vw;
+  margin: 1vw;
+  box-shadow: #00000040 3px 4px 7px 5px, #00000038 0px 10px 10px;
+
+}
+
+details:not([open]):hover {
+  background-color: var(--color-glow);
+}
