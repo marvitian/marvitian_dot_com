@@ -64,7 +64,7 @@ function Day1_pt2_python()
             To continue this problem, I needed a bit of math. (you know it was frustrating when 
             the pen and paper come out)
             <br />
-            <img src="src\assets\day1_pt2_scratch.JPG" width="400"/>
+            <img src="/day1_pt2_scratch.JPG" width="400"/>
 
             <br />
             After a couple of iterations, I cleaned up the boilerplate stuff and put in some logging
